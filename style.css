@@ -10,5 +10,63 @@ html {
 }
 
 :root {
-    background: yellow;
+    --primaria: #E63946;
+    --secundaria: #1A1A1A;
+    --escuro: #0D0D0D;
+    --maisEscuro: #050505;
+    --claro: #D1D5DB;
+    --vidro: rgba(26, 26, 26, 0.7);
+  }
+
+  body {
+    background-color: var(--escuro);
+    color: var(--claro)
+  }
+
+  .navegacao {
+    position: fixed;
+    background: rgba(15, 23, 42, 0.8);
+    z-index: 100;
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    justify-content: center;
+}
+
+  .menu-link {
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+  }
+
+  .menu-link::before {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: blueviolet;
+  }
+
+  .menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: blueviolet;
+    transition: 0.5s ease-in;
+  }
+
+  .menu-link:hover::after {
+    width: 100%;
   }
