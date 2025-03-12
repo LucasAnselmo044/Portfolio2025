@@ -7,15 +7,15 @@
 
 html {
     scroll-behavior: smooth;
-}
+} 
 
 :root {
-    --primaria: #E63946;
+    --primaria: #6d39e6;
     --secundaria: #1A1A1A;
-    --escuro: #0D0D0D;
+    --escuro: #0c0009;
     --maisEscuro: #050505;
     --claro: #D1D5DB;
-    --vidro: rgba(26, 26, 26, 0.7);
+    --vidro: rgba(0, 64, 120, 0.5);
   }
 
   body {
@@ -25,7 +25,7 @@ html {
 
   .navegacao {
     position: fixed;
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(41, 15, 42, 0.8);
     z-index: 100;
     padding: 1.5rem;
     width: 100%;
@@ -69,4 +69,34 @@ html {
 
   .menu-link:hover::after {
     width: 100%;
+  }
+
+  .foto-perfil {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0px 17px 16px -3px rgba(28,0,46,1);
+    border-radius: 50%;
+    border: 4px solid var(--primaria);
+  }
+
+  .inicio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    color: blueviolet;
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .paragrafo-main {
+    font-size: 2rem;
+    color: var(--claro);
+    font-weight: lighter;
+    margin: 10px;
   }
