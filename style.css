@@ -100,3 +100,28 @@ html {
     font-weight: lighter;
     margin: 10px;
   }
+
+  .sobre {
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sobre-titulo {
+    font-size: xx-large;
+    color: var(--claro);
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .sobre-caixa {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 2rem;
+  }
+  
+  .sobre-paragrafo {
+    font-size: 1.2rem;
+  }
