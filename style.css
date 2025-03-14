@@ -126,7 +126,6 @@ html {
     height: 50px;
     transition: transform 0.4s ease-in-out;
     box-shadow: 10px 10px 81px -22px rgba(138,43,226,1);
-
     border-radius: 50%;
   }
   
@@ -148,7 +147,7 @@ html {
     font-size: xx-large;
     color: var(--claro);
     font-weight: bold;
-    margin: 20px;
+    margin-bottom: 5rem;
   }
 
   .sobre-caixa {
@@ -163,4 +162,49 @@ html {
   
   .sobre-paragrafo {
     font-size: 1.2rem;
+  }
+
+  .projetos {
+    margin-bottom: 5rem;
+  }
+
+  .projetos-titulo {
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  .projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .projetos-card {
+  }
+
+  .info-projetos {
+    margin-top: 1rem;
+    color: #8a2be2;
+  }
+
+  .paragrafo-projetos {
+    margin-top: 1rem;
+  }
+
+  .projetos-imagem {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .projetos-imagem:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
   }
