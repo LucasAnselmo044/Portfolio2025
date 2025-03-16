@@ -221,6 +221,7 @@ html {
   }
 
   .projeto-link {
+    font-size: x-large;
     text-decoration: none;
     margin-top: 1rem;
     color: #8a2be2;
@@ -243,4 +244,51 @@ html {
   .projeto-link:hover::after {
     width: 100%;
   }
+
+  .contato {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #050505;
+    gap: 1.5rem;
+    padding: 6rem 2rem;
+  }
+
+  .h2-contato {
+    font-size: xx-large;
+    margin-top: 1.5rem;
+  }
+
+  .paragrafo-contatos {
+    font-size: x-large;
+  }
   
+  .formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--primaria);
+    padding: 5rem 5rem;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    background: #08000f;
+  }
+
+  .campo-form {
+    width: 100%;
+    padding: 1rem 5rem;
+    border-radius: 8px;
+    color: #8a2be2;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+
+  .campo-form:focus {
+    box-shadow: 1px 1px 18px -11px rgba(138,43,226,1);
+    border-color: #8a2be2;
+  } 
+
+  .grupo-form {
+    margin-bottom: 1rem;
+  }
