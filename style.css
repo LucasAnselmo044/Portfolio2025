@@ -208,3 +208,39 @@ html {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
   }
+
+  .stack {
+    display: flex;
+    list-style: none;
+    color: #8a2be2;
+  }
+
+  .stack-list {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+
+  .projeto-link {
+    text-decoration: none;
+    margin-top: 1rem;
+    color: #8a2be2;
+    font-weight: bold;
+    position: relative; /* Adicionando position relative */
+    display: inline-block; /* Para garantir que a linha tenha o tamanho do texto */
+  }
+  
+  .projeto-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: -2px; /* Garante que a linha fique logo abaixo do texto */
+    left: 0;
+    background: blueviolet;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .projeto-link:hover::after {
+    width: 100%;
+  }
+  
