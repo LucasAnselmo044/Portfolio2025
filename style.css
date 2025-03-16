@@ -297,7 +297,6 @@ html {
     color: #8a2be2;
     outline: none;
     transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    
   }
 
   .campo-form:focus {
@@ -305,9 +304,19 @@ html {
     border-color: #8a2be2;
   } 
 
+  textarea {
+    height: 10rem; 
+    width: 100%; 
+    resize: vertical;
+    text-align: left;
+  }
+
   .grupo-form {
     margin-bottom: 1rem;
+    justify-content: center ;
   }
+  
+  
 
   .botao-form {
     background: linear-gradient(45deg, #8a2be2, #6d39e6);
