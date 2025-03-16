@@ -16,6 +16,9 @@ html {
     --maisEscuro: #050505;
     --claro: #D1D5DB;
     --vidro: rgba(0, 64, 120, 0.5);
+    --particulaPrimaria: #8a2be2;
+    --particulaSecundaria: #6a0dad;
+    --particulaMaisEscura: #1b1b2f;
   }
 
   body {
@@ -135,6 +138,16 @@ html {
     transition: transform 0.3s ease-in-out;
   }
 
+  .logo-github-projetos {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 10px 10px 81px -22px rgba(138,43,226,1);
+    border-radius: 50%;
+    position: absolute;
+    right: 1rem;
+  }
+
   .sobre {
     padding: 6rem 2rem;
     display: flex;
@@ -185,6 +198,7 @@ html {
   }
 
   .projetos-card {
+    position: relative;
   }
 
   .info-projetos {
@@ -251,7 +265,8 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #050505;
+    background: rgb(12,0,9);
+    background: linear-gradient(0deg, rgba(12,0,9,1) 0%, rgba(0,0,0,1) 100%);
     gap: 1.5rem;
     padding: 6rem 2rem;
   }
@@ -282,6 +297,7 @@ html {
     color: #8a2be2;
     outline: none;
     transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    
   }
 
   .campo-form:focus {
@@ -291,4 +307,31 @@ html {
 
   .grupo-form {
     margin-bottom: 1rem;
+  }
+
+  .botao-form {
+    background: linear-gradient(45deg, #8a2be2, #6d39e6);
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5 ease;
+  }
+
+  .botao-form:hover {
+    background: #5d16a0;
+  }
+
+  .particulas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.2;
+    background: radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 25%), radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%), var(--escuro);
+    filter: blur(4px);
+    will-change: transform;
   }
