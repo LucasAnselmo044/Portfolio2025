@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Lucas Anselmo - Portfolio</title>
 </head>
 <body>
@@ -101,14 +101,17 @@
     <section id="contato" class="contato">
         <h2 class="h2-contato">Quer trabalhar comigo?</h2>
         <p class="paragrafo-contatos">Entre em contato:</p>
-        <form class="formulario-contato">
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWpp(event)">
             <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
             </div>
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua mensagem..."></textarea>
+                <textarea class="campo-form" placeholder="Email" id="email"></textarea>
             </div>
-            <button class="botao-form">Enviar</button>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem..." id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar</button>
         </form>
     </section>
 </body>
