@@ -213,7 +213,9 @@ h1 {
   color: #8a2be2;
 }
 
-.paragrafo-projetos {
+.paragrafo-quizzma,
+.paragrafo-typing,
+.paragrafo-todolist {
   margin-top: 1rem;
 }
 
@@ -357,6 +359,15 @@ textarea {
     var(--escuro);
   filter: blur(4px);
   will-change: transform;
+}
+
+#language-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 @media (max-width: 440px) {
